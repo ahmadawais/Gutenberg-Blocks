@@ -16,13 +16,9 @@ wp.blocks.registerBlockType('gb/tweet', {
 
 	edit: function (props) {
 		return React.createElement(
-			'textarea',
-			null,
-			React.createElement(
-				'a',
-				{ href: 'https://twitter.com/home?status=Custom%20Tweet!' },
-				'Click To Tweet!'
-			)
+			'a',
+			{ href: 'https://twitter.com/home?status=Custom%20Tweet!' },
+			'Click To Tweet!'
 		);
 	},
 

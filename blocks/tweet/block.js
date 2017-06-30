@@ -15,11 +15,7 @@ wp.blocks.registerBlockType( 'gb/tweet', {
 	},
 
 	edit: function( props ) {
-		return (
-			<textarea>
-				<a href='https://twitter.com/home?status=Custom%20Tweet!'>Click To Tweet!</a>
-			</textarea>
-		);
+		return <a href='https://twitter.com/home?status=Custom%20Tweet!'>Click To Tweet!</a>
 	},
 
 	save: function( props ) {
