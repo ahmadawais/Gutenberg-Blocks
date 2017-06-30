@@ -11,18 +11,18 @@ wp.blocks.registerBlockType( 'gb/tweet', {
 	category: 'common',
 
 	attributes: {
-		category: 'foo'
+		text: 'Tweet Text',
 	},
 
 	edit: function( props ) {
-		return wp.element.createElement( 'a', {
-			href: 'https://twitter.com/home?status=',
-		} );
+		return (
+			<textarea>
+				<a href='https://twitter.com/home?status=Custom%20Tweet!'>Click To Tweet!</a>
+			</textarea>
+		);
 	},
 
 	save: function( props ) {
-		return wp.element.createElement( 'a', {
-			href: 'https://twitter.com/home?status=',
-		} );
+		return <a href='https://twitter.com/home?status=Custom%20Tweet!'>Click To Tweet!</a>
 	}
 } );

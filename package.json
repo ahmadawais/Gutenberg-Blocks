@@ -4,7 +4,9 @@
   "description": "Custom 3rd party gutenberg blocks",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "b-tweet": "babel --plugins transform-react-jsx blocks/tweet/block.js -o blocks/tweet/block-build.js --minified",
+    "bw-tweet": "babel --plugins transform-react-jsx blocks/tweet/block.js -o blocks/tweet/block-build.js --minified -w",
+    "build": "npm run b-tweet"
   },
   "author": "Ahmad Awais",
   "license": "GPLv2.0",

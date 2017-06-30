@@ -28,7 +28,7 @@ if ( ! function_exists( 'gb_block_tweet' ) ) {
 		// Tweet block.
 		wp_enqueue_script(
 		    'gb-block-tweet',
-		    GB_URL . '/blocks/tweet/block.js',
+		    GB_URL . '/blocks/tweet/block-build.js',
 		    array( 'wp-element' ),
 		    false,
 		    true
