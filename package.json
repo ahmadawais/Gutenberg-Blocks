@@ -1,0 +1,15 @@
+{
+  "name": "gutenberg-blocks",
+  "version": "1.0.0",
+  "description": "Custom 3rd party gutenberg blocks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmad Awais",
+  "license": "GPLv2.0",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1"
+  }
+}
