@@ -7,7 +7,7 @@
     </tr>
     <tr>
         <td>
-            A FOSS (Free & Open Source Software) project. Maintained by @AhmadAwais.
+            A FOSS (Free & Open Source Software) project. Maintained by <a href="https://github.com/ahmadawais/" target="_blank">@AhmadAwais</a>.
         </td>
         <td align="center">
             <a href="https://AhmadAwais.com/">
