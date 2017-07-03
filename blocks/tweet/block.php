@@ -27,11 +27,11 @@ if ( ! function_exists( 'gb_block_tweet' ) ) {
 	function gb_block_tweet() {
 		// Tweet block.
 		wp_enqueue_script(
-		    'gb-block-tweet',
-		    GB_URL . '/blocks/tweet/block-build.js',
-		    array( 'wp-element' ),
-		    false,
-		    true
+			'gb-block-tweet',
+			GB_URL . '/blocks/tweet/block-build.js',
+			array( 'wp-element' ),
+			false,
+			true
 		);
 		wp_localize_script(
 			'gb-block-tweet',
