@@ -27,11 +27,22 @@ if ( ! function_exists( 'gb_block_tweet' ) ) {
 	function gb_block_tweet() {
 		// Tweet block.
 		wp_enqueue_script(
-		    'gb-block-tweet',
-		    GB_URL . '/blocks/tweet/block-build.js',
-		    array( 'wp-element' ),
-		    false,
-		    true
+			'gb-block-tweet',
+			GB_URL . '/blocks/tweet/block-build.js',
+			array( 'wp-element' ),
+			false,
+			true
 		);
-	} // End fucntion gb_block_tweet().
+		wp_localize_script(
+			'gb-block-tweet',
+			'gbBlockTweet',
+			array(
+				'i18n' => array(
+					'label' => 'Tweet',
+					'message' => 'Tweet Text!',
+					'linktext' => 'Click to Tweet!',
+				)
+			)
+		);
+	} // End function gb_block_tweet().
 } // End if().

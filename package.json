@@ -4,8 +4,8 @@
   "description": "Custom 3rd party gutenberg blocks",
   "main": "index.js",
   "scripts": {
-    "b-tweet": "babel --plugins transform-react-jsx blocks/tweet/block.js -o blocks/tweet/block-build.js --minified",
-    "bw-tweet": "babel --plugins transform-react-jsx blocks/tweet/block.js -o blocks/tweet/block-build.js --minified -w",
+    "b-tweet": "babel --plugins transform-react-jsx blocks/tweet/block.jsx -o blocks/tweet/block-build.js --minified",
+    "bw-tweet": "babel --plugins transform-react-jsx blocks/tweet/block.jsx -o blocks/tweet/block-build.js --minified -w",
     "build": "npm run b-tweet"
   },
   "author": "Ahmad Awais",
