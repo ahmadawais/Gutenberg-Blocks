@@ -20,8 +20,16 @@
 
 **Work in progress 3rd party Custom Gutenberg WordPress Editor Blocks**
 
-# ⚡️ Getting Set Up
+## ⚡️ Getting Set Up
 
-- Clone the repo in your plugins directory
-- Open the repo and run `npm install`
-- Build JSX with NPM Scripts `npm run build`
+- Clone the repo in your plugins directory.
+- Open the repo and run `npm install`.
+- Build JSX with NPM Scripts `npm run build`.
+
+
+## ⚡️ To do!
+
+- [x] Basic Custom 3rd Party Block.
+- [ ] Dynamic input from user in the Custom Block.
+- [ ] Boilerplate `Webpack` configuration.
+
