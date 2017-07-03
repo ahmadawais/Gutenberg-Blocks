@@ -33,5 +33,16 @@ if ( ! function_exists( 'gb_block_tweet' ) ) {
 		    false,
 		    true
 		);
-	} // End fucntion gb_block_tweet().
+		wp_localize_script(
+			'gb-block-tweet',
+			'gbBlockTweet',
+			array(
+				'i18n' => array(
+					'label' => 'Tweet',
+					'message' => 'Tweet Text!',
+					'linktext' => 'Click to Tweet!',
+				)
+			)
+		);
+	} // End function gb_block_tweet().
 } // End if().

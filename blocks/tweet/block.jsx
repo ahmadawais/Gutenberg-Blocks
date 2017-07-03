@@ -6,19 +6,21 @@
  * @since  1.0.0
  */
 wp.blocks.registerBlockType( 'gb/tweet', {
-    title: 'Tweet',
-    icon: 'twitter',
-    category: 'common',
+	title: gbBlockTweet.i18n.label,
+	icon: 'twitter',
+	category: 'common',
 
-    attributes: {
-        text: 'Tweet Text',
-    },
+	attributes: {
+		text: gbBlockTweet.i18n.message,
+	},
 
-    edit: function( props ) {
-        return <a href='https://twitter.com/home?status=Custom%20Tweet!'>Click To Tweet!</a>
-    },
+	edit: function( props ) {
+		console.log( props );
+		return <a href={'https://twitter.com/home?status=' + encodeURIComponent( gbBlockTweet.i18n.message )}>{gbBlockTweet.i18n.linktext}</a>
+	},
 
-    save: function( props ) {
-        return <a href='https://twitter.com/home?status=Custom%20Tweet!'>Click To Tweet!</a>
-    }
+	save: function( props ) {
+		console.log( props );
+		return <a href={'https://twitter.com/home?status=' + encodeURIComponent( gbBlockTweet.i18n.message )}>{gbBlockTweet.i18n.linktext}</a>
+	}
 } );
