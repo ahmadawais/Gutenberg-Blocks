@@ -4,7 +4,7 @@
  *
  * Tweet button.
  *
- * @since 	1.0.0
+ * @since   1.0.0
  * @package GB
  */
 
@@ -33,15 +33,17 @@ if ( ! function_exists( 'gb_block_tweet' ) ) {
 			false,
 			true
 		);
+
+		// Localized data.
 		wp_localize_script(
 			'gb-block-tweet',
 			'gbBlockTweet',
 			array(
 				'i18n' => array(
-					'label' => 'Tweet',
-					'message' => 'Tweet Text!',
+					'label'    => 'Tweet',
+					'message'  => 'Tweet Text!',
 					'linktext' => 'Click to Tweet!',
-				)
+				),
 			)
 		);
 	} // End function gb_block_tweet().

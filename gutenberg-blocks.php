@@ -13,9 +13,8 @@
  */
 
 // Exit if accessed directly.
-if ( ! defined( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) )
 	exit;
-}
 
 
 /**
@@ -25,26 +24,22 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 // Plugin version.
 if ( ! defined( 'GB_VERSION' ) ) {
-    define( 'GB_VERSION', '1.0.0' );
+	define( 'GB_VERSION', '1.0.0' );
 }
 
 if ( ! defined( 'GB_NAME' ) ) {
-    define( 'GB_NAME', trim( dirname( plugin_basename( __FILE__ ) ), '/' ) );
+	define( 'GB_NAME', trim( dirname( plugin_basename( __FILE__ ) ), '/' ) );
 }
 
-if ( ! defined('GB_DIR' ) ) {
-    define( 'GB_DIR', WP_PLUGIN_DIR . '/' . GB_NAME );
+if ( ! defined( 'GB_DIR' ) ) {
+	define( 'GB_DIR', WP_PLUGIN_DIR . '/' . GB_NAME );
 }
 
-if ( ! defined('GB_URL' ) ) {
-    define( 'GB_URL', WP_PLUGIN_URL . '/' . GB_NAME );
+if ( ! defined( 'GB_URL' ) ) {
+	define( 'GB_URL', WP_PLUGIN_URL . '/' . GB_NAME );
 }
 
 /**
- * Init.
- *
- * @since 1.0.0
+ * Initialize the blocks.
  */
-if ( file_exists( GB_DIR . '/blocks/init.php' ) ) {
-    require_once( GB_DIR . '/blocks/init.php' );
-}
+require_once( GB_DIR . '/blocks/init.php' );
