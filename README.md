@@ -1,3 +1,5 @@
+❌ DEPRECATED in the favour of https://github.com/ahmadawais/Gutenberg-Boilerplate
+
 <table width="100%">
     <tr>
         <td align="left" width="100%" colspan="2">
@@ -32,4 +34,6 @@
 - [x] Basic Custom 3rd Party Block.
 - [ ] Dynamic input from user in the Custom Block.
 - [ ] Boilerplate `Webpack` configuration.
+
+❌ DEPRECATED in the favour of https://github.com/ahmadawais/Gutenberg-Boilerplate
 
