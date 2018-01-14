@@ -24,6 +24,8 @@
 
 ## ⚡️ Getting Set Up
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ahmadawais/Gutenberg-Blocks.svg)](https://greenkeeper.io/)
+
 - Clone the repo in your plugins directory.
 - Open the repo and run `npm install`.
 - Build JSX with NPM Scripts `npm run build`.
